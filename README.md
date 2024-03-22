@@ -1,6 +1,6 @@
 # IIS to Nginx
 
-A Laravel project to convert IIS web.config files into redirect format for `nginx`.
+A Laravel project to convert IIS `web.config` files into redirect format for `nginx`.
 
 ## Requirements:
 **IIS to Nginx** was created in **Laravel version 11.x** and requires the following:
