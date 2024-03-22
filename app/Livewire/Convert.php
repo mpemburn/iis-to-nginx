@@ -12,18 +12,22 @@ class Convert extends Component
 {
     use WithFileUploads;
 
-    public $configFile;
+    public $sourceFile;
     public string $destinationFile = 'redirect.conf';
     public bool $showConvertControls = true;
     public bool $showDownloadControls = false;
 
+
     public function save()
     {
         $this->validate([
-            'configFile' => 'file|mimetypes:application/xml,text/xml',
+            'sourceFile' => 'file|mimetypes:application/xml,text/xml',
+        ], [],
+        [
+            'sourceFile' => 'Source file'
         ]);
 
-        $uploadedFile = $this->configFile->storeAs('config_files', 'web.config');
+        $uploadedFile = $this->sourceFile->storeAs('config_files', 'web.config');
         $filePath = Storage::path($uploadedFile);
 
         if (file_exists($filePath) && ParseWebConfigService::isValidXml($filePath)) {

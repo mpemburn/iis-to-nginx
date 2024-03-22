@@ -1,0 +1,31 @@
+.card-body {
+    padding-bottom: 2rem !important;
+}
+
+.control-btn {
+    position: relative;
+    top: -1px;
+    padding: 2px 4px;
+    color: #ffffff;
+    background-color: #0000dd;
+    border: 1px solid #0000dd;
+    border-radius: 3px;
+    &:hover {
+        background-color: #000099;
+    }
+    &:disabled {
+        opacity: 0.5;
+    }
+}
+
+span.required {
+    color: #cc0000;
+}
+
+span.error {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    color: #cc0000;
+}
+
