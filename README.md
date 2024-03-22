@@ -43,7 +43,7 @@ This will launch a server on `http://127.0.0.1:8000`
 - When you have **IIS to Nginx** running in a browser, click the **Choose File** (or **Browse**) button the select your `web.config` file.
 - By default, the output file will be called `redirect.conf`, but you can call it anything you like.
 - Click the **Convert** button to do the conversion.  If everything is good, you'll see the **Download** button.
-- Click the **Download** button, and your convert file will download.
+- Click the **Download** button, and your converted file will download.
 - That's it!
 
 The **Clear** button will let you begin again.
